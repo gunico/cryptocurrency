@@ -39,15 +39,15 @@ function RightSide(props) {
 
 
     return (
-        <>
-            <Row className='d-flex p-1 vh-50'>
+        <Row className='d-flex p-1 entire'>
+            <Row className='d-flex p-1 half'>
                 <ListPairs namePairs={namePairs} loading={loading} getName={getName}></ListPairs>
             </Row>
            
-            <Row className='d-flex p-1 vh-50'>
+            <Row className='d-flex p-1 half'>
                 <TableValues namePairs={namePair} loading={loading}></TableValues>
             </Row>
-        </>
+        </Row>
 
 
 

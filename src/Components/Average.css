@@ -1,3 +1,5 @@
-.averageHight{
-  height: 100vh;
+.total {
+  height: 100%;  
+  width: 100%;
+  overflow: auto;
 }

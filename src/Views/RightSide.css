@@ -1,6 +1,10 @@
 .half {
-    height: 50%;  
+    height: 30%;  
     width: 100%;
     overflow: auto;
   }
+
+.entire{
+  height: 40%;
+}
   

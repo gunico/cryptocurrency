@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Col, Row } from 'react-bootstrap';
 
 import './App.css';
+import './Views/RightSide.css';
 import Average from './Components/Average';
 import RightSide from './Views/RightSide';
 
@@ -9,7 +10,7 @@ function App() {
 
 
   return (
-    <Container className='d-flex vh-100'>
+    <Container>
       <Row>
 
         <Col>
@@ -17,11 +18,10 @@ function App() {
         </Col>
 
         <Col>
-          <RightSide className='d-flex vh-100'/>
+          <RightSide />
         </Col>
 
       </Row>
-
     </Container>
   );
 }

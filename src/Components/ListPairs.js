@@ -6,7 +6,7 @@ function ListPairs(props) {
 
   return (
 
-      <Card  className='d-flex p-2 vh-50'>
+      <Card  >
         <Card.Header className="d-flex justify-content-center align-item-center">Pairs</Card.Header>
         <Card.Body>
           <Card.Text className="d-flex p-2 justify-content-center content-item-center align-content-start flex-wrap overflow-auto">

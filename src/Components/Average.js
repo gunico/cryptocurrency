@@ -32,9 +32,9 @@ function Average() {
     return (
         <>
             <Card className='d-flex p-2 vh-100'>
-                <Card.Header className="d-flex justify-content-center align-item-center align-content-center">Average</Card.Header>
+                <Card.Header className="d-flex justify-content-center align-content-center">Average</Card.Header>
                 <Card.Body>
-                    <Card.Text className="d-flex p-2 justify-content-center align-item-center align-content-center" >
+                    <Card.Text className="d-flex justify-content-center align-content-center" >
                         {loading ? <Spinner animation="grow" /> : average}
                     </Card.Text>
                 </Card.Body>

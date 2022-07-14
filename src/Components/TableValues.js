@@ -24,21 +24,17 @@ function TableValues(props) {
         getValues(props.namePairs);
 
     }, [props.namePairs]);
-/*
-    const giveName = (pair) => {
-        const lowerPair = pair.slice(0, 3) + pair.slice(-3);
-        return lowerPair.toLowerCase();
-    }
-*/
+
+
     return (
         <>
             {
                 loading ?
                 <Spinner animation="grow" /> :
-                    <Card  className='d-flex p-2 vh-50'>
+                    <Card  className='d-flex p-2'>
                         <Card.Header className="d-flex justify-content-center content-item-center">{props.namePairs}</Card.Header>
                         <Card.Body>
-                            <Card.Text className="d-flex p-2 justify-content-center content-item-center align-content-start flex-wrap overflow-auto">
+                            <Card.Text className="d-flex p-2 justify-content-center content-item-center align-content-start flex-wrap">
                                 {loading ? <Spinner animation="grow" /> :
                                     <ValuesTable last={values.last} high={values.high} low={values.low} date={values.date}
                                         ask={values.ask} bid={values.bid} open={values.open} volume={values.volume} vwap={values.vwap} />
