@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Col, Row } from 'react-bootstrap';
+
 import './App.css';
+import Average from './Components/Average';
+import RightSide from './Views/RightSide';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className='d-flex vh-100'>
+      <Row>
+
+        <Col>
+          <Average />
+        </Col>
+
+        <Col>
+          <RightSide className='d-flex vh-100'/>
+        </Col>
+
+      </Row>
+
+    </Container>
   );
 }
 
