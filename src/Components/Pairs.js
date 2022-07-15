@@ -6,7 +6,7 @@ import './Pairs.css'
 
 function Pairs(props) {
 
-  const [name, setName] = useState(props.pair);
+  const [name] = useState(props.pair);
 
   const upperPair = props.pair.slice(0, 3).toUpperCase() + '/' + props.pair.slice(-3).toUpperCase();
 
