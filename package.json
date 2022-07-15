@@ -2,6 +2,9 @@
   "name": "cryptocurrency",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.20.0"
+  },
   "dependencies": {
     "@nivo/core": "^0.79.0",
     "@nivo/line": "^0.79.1",
